@@ -8,8 +8,9 @@ namespace Tests
         [Test]
         public void GameStarted_ShowsEmptyBoard()
         {
-            var result = "   |   |   ";
-            Assert.That(result, Is.EqualTo("   |   |   "));
+            const string emptyBoard = "   |   |   ";
+            var result = emptyBoard;
+            Assert.That(result, Is.EqualTo(emptyBoard));
         }
     }
 }
